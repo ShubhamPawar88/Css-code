@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        in case of adjacent(means following) sibling, the style will be apply to the FIRST
+        sibling of the given element(div)
+        */
+        div + a{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">link1</a><br>
+        <a href="#">link2</a><br>
+    </div>
+    <a href="#">link3</a><br>
+    <a href="#">link4</a><br>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: yellow;
+            width: 180px;
+            height: 150px;
+            margin-top: 30px;
+           
+        }
+        #d1{
+            animation-name: demo;
+            /* if we want to apply animation on any html element
+            then we must have to specify  animation-duration property
+            bcz, if we wont specify  animation-duration: property then by default the duration is 0s
+            */
+            animation-duration: 5s;
+        }
+        @keyframes demo{
+            from{background-color: blueviolet;}
+            to{background-color: green;}
+        }
+        #d2{
+            animation-name: demo2;
+            animation-duration: 12s;
+        }
+    
+        @keyframes demo2{
+            0%{background-color: aqua;}
+            25%{background-color: maroon;}
+            50%{background-color: magenta;}
+            75%{background-color: navy;}
+            100%{background-color: chocolate;}
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+         changing color
+    </div>
+    <div id="d2">
+        changing color
+   </div>
+</body>
+</html>

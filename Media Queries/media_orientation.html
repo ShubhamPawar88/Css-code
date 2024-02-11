@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: yellow;
+            font-size: 48px;
+            height: 100px;
+        }
+       /* landscape=> horizontal
+       portrait=> vertical */
+        /* suitable for mobile size devices */
+        @media(max-width:600px) and (orientation:portrait){
+        div{
+            background-color: violet;
+            }
+       }
+       /* suitable for laptop size devices */
+       /* @media(min-width:600px) and (orientation:landscape){
+        div{
+            background-color: violet;
+            }
+       } */
+
+       </style>
+</head>
+<body>
+    <!-- Media Query is used to make web pages responsive
+       What is responsiveness?
+       the webpage is called as responsive if it changes its size,color,layout,images,font sizes according to the device
+    -->
+     <div>
+        div1
+    </div>
+</body>
+</html>

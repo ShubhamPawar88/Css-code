@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* Counter reset property is used to create/reset counter
+        Here,parts is a name of counter */
+            ol {
+                list-style-type: none;
+                counter-reset: parts;
+            }
+
+            li::before {
+                counter-increment: parts;
+                content: counters(parts, ".");
+            }
+                
+
+        </style>
+    </head>
+
+    <body>
+        <ol>
+            <li>Bags</li>
+            <li>Watches</li>
+            <li>Shoes</li>
+            <li>Clothes
+                <ol>
+                    <li>Kids Wear
+                        <ol>
+                            <li>Shoes</li>
+                            <li>Crocs</li>
+                            <ol>
+                                <li>White Colour</li>
+                                <li>Black Colour</li>
+                            </ol>
+                        </ol>
+                    </li>
+                    <li>Mens Wear</li>
+                    <li>Womens Wear</li>
+                </ol>
+            </li>
+            <li>Perfumes</li>
+        </ol>
+    </body>
+
+</html>

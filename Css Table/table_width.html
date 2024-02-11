@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+             border: 1px solid black;
+             border-collapse: collapse;
+             padding:10px ;
+             border-radius: 20px;
+            }
+            .stud1 th{
+                background-color: gray;
+
+            }
+            .stud1 tr:nth-child(even){
+                background-color:lightsalmon ;
+
+            }
+            .stud1 tr:nth-child(odd){
+                background-color:lightcoral;
+
+            }
+            .stud1{
+                width: 50%;
+
+            }
+            .stud2{
+                width: 100%;
+                border: 25px ridge blueviolet;
+            }
+            .stud2 td,th{
+               border: none;
+            }
+            .stud2 th{
+                height: 50px;
+                background-color: gray;
+
+            }
+            .stud2 tr:nth-child(odd){
+                background-color:lightgreen;
+
+            }
+             .stud2 tr:nth-child(even){
+                background-color: lightgoldenrodyellow;
+
+            }
+            caption{
+                margin-bottom: 20px;
+                margin-top: 100px;
+                font-size: 35px;
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <table class="stud1">
+        <caption >Student Info</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Shubham</td>
+            <td>23</td>
+            <td>86.40</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Prasad</td>
+            <td>23</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Dipak</td>
+            <td>24</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <table class="stud2">
+        <caption >Student Info</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Shubham</td>
+            <td>23</td>
+            <td>86.40</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Prasad</td>
+            <td>23</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Dipak</td>
+            <td>24</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html> 

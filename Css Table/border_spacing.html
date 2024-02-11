@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        table,th,td{
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 30px;
+            border-collapse: separate;
+            /* 40px represents horizontal border spacing
+            20px represents vertical border spacing
+            border spacing property should always be used with border-collapse:separate; */
+            border-spacing: 40px 20px;
+        }
+        th{
+           background-color: gray; 
+        }
+        /* coloring even number of records */
+        tr:nth-child(even){
+            background-color: burlywood;
+        }
+        /* coloring odd number of records */
+        tr:nth-child(odd){
+            background-color: coral;
+        }
+
+
+    </Style>
+</head>
+<body>
+    <table>
+        <caption>Student Info</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Shubham</td>
+            <td>23</td>
+            <td>86.40</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Prasad</td>
+            <td>23</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Dipak</td>
+            <td>24</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>

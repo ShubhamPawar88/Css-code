@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* animation shorthand property */
+            animation: bdy 2s linear infinite;
+        }
+        @keyframes bdy{
+            from{background-color: blue;}
+            to{background-color: brown;}
+        }
+        img:hover{
+            border-radius: 50%;
+            border: 20px ridge blueviolet;
+            width: 500px;
+            height: 500px;
+            margin-left:50vw ;
+            animation-name: imageRotate;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+
+        }
+        @keyframes imageRotate{
+            to{transform: rotate(0deg);}
+            from{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <img src="/CSS/Image/Rohit.png" alt="">
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+        p.p1{
+            border-top: 3px dotted red;
+            border-right: 5px solid green;
+            border-bottom: double;
+            border-left: dashed blue;
+        }
+        p.p2{
+            /* border style shorthand with 4 border style values */
+            /* solid for top , dottead for right , dashed for bottom and double for left */
+            border-style: solid dotted dashed double;
+            border-color: blueviolet red orange lime;
+        }
+        p.p3{
+            /* border style shorthand with 3 border style values */
+            /* solid for top and dotted for right double for bottom */
+            border-style: solid dotted  double;
+            border-color: blueviolet;
+        }
+        p.p4{
+            /* border style shorthand with 2 border style values */
+            /* solid for top-bottom and dotted for left-right */
+            border-style: solid dotted ;
+            border-color: blue;
+        }
+        p.p5{
+            /* border style shorthand with 1 border style values */
+            /* solid for top bottom right left */
+            border-style: solid  ;
+            border-color: orange;
+        }
+        p.p6{
+            /* border style attribute for only border type */
+            border-style: solid  ;
+            /* border attribute for border type ,border color,border width */
+            border:  solid greenyellow 8px;
+        }
+
+
+    </style>
+</head>
+<body style="border: 8px double cadetblue;">
+    <p class="p1"> This Is Paragraph</p>
+    <p class="p2"> This Is Paragraph</p>
+    <p class="p3"> This Is Paragraph</p>
+    <p class="p4"> This Is Paragraph</p>
+    <p class="p5"> This Is Paragraph</p>
+    <p class="p6"> This Is Paragraph</p>
+</body>
+</html>

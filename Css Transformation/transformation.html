@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lime;
+            width: 180px;
+            height: 150px;
+            margin-top: 30px;
+        }
+        #d1:hover{
+            border: 10px solid black;
+            /* translate transfer the element from one position to another */
+            transform: translate(100px, 80px);
+        
+        }
+        #d2:hover{
+            /* rotate changes the angle or direction of the element */
+            border: 10px solid magenta;
+            transform: rotate(50deg);
+            /* transform: rotate(-10deg);
+         */
+        }
+        #d3:hover{
+            border: 10px solid blue;
+            /* Scalability means increases or decreases the size of element
+            here, in below code 0.5 means it decreases the size of element by half
+             */
+            /* here, in below code 2 means itincreases the size of element by 2times the current size
+             */
+            transform: scale(0.5,0.5);
+            /* transform: scale(2,2); */
+        
+        }
+        #d4:hover{
+            font-size: 1.5em;
+            /* rotates the element to the half of the viewport */
+            transform: rotatex(150deg);
+
+            /* rotates the element to the full of the viewport */
+            /* transform: rotatey(150deg);
+
+            /* rotates the element diagonally */
+            /* transform: rotatez(150deg);  */
+            background-color: pink;
+        
+        }
+    </style>
+</head>
+<body>
+    <!-- Css transformation is used to perform transformation on html elements..by using this transformation property we can move,rotate,increase or decrease the size of an element -->
+<div id="d1"> First Div</div>
+<hr>
+<div id="d2"> Second Div</div>
+<hr>
+<div id="d3">Third Div</div>
+<hr>
+<div id="d4">Fourth Div</div>
+<hr>
+</body>
+</html>

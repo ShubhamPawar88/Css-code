@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            box-sizing:border-box ;
+        } */
+        div{
+            background-color: blue;
+            margin-bottom: 10px;
+
+            width: 300px;
+            height: 150px;
+        }
+        #i2{
+            /* without box-sizing property => if we are trying to add padding in the particular element then it affects the total
+            length of the element */
+            padding: 40px;
+            border: 20px solid black;
+            /* box-sizing:border-box ; */
+
+
+
+            /* with box-sizing property => if we are trying to add padding in the particular element then it WILL NOT affects the total
+            length of the element it will be as it is bcz,box-sizing
+            includes the padding size in  total height and width of the element*/
+
+            /* box-sizing: border-box;
+            border: 20px solid black;
+            padding: 40px; */
+
+            
+
+            /* Actual total length of the element is =
+               width+padding +border+ heigth 
+             */
+
+             /* Actual total width of the element is =
+               width+padding +border 
+             */
+           
+              /* Actual total height of the element is =
+               height +padding +border 
+             */
+
+         }
+    </style>
+</head>
+<body>
+    <div id="i1">
+          this is div1
+    </div>
+    <div id="i2">
+        this is div2
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+           background-color: aqua;
+           border: 1px solid black;
+           width: 25%;
+           height: 100px;
+           float: left;
+           box-sizing: border-box;
+           text-align: center;
+           padding:60px ;
+
+        }
+    
+        @media screen and (max-width:900px) {
+            .demo{
+               width: 50%;
+            }
+       }
+       /* @media screen and (max-width:600px) {
+            .demo{
+               width: 100%;
+            }
+       } */
+    </style>
+</head>
+<body>
+    <div id="d1" class="demo">Div1</div>
+    <div id="d2" class="demo">Div2</div>
+    <div id="d3" class="demo">Div3</div>
+    <div id="d4" class="demo">Div4</div>
+</body>
+</html>

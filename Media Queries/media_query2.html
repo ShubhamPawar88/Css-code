@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: yellow;
+            font-size: 48px;
+            height: 100px;
+        }
+        /* 0-300 */
+        @media(max-width:300px){
+            div{
+                background-color: brown;
+            }
+        }
+        /* 300-600 */
+        /* media with and operator */
+        @media(min-width:300px) and (max-width:600px){
+            div{
+                background-color: aquamarine;
+            }
+        }
+        /* 600 */
+        @media(min-width:601px){
+            div{
+                background-color: blueviolet;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Media Query is used to make web pages responsive
+       What is responsiveness?
+       the webpage is called as responsive if it changes its size,color,layout,images,font sizes according to the device
+    -->
+     <div>
+        div1
+    </div>
+</body>
+</html>

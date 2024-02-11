@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            html {
+                /* here html is a root element so this 1.5em is applicable to all the elements */
+                font-size: 30px;
+            }
+
+            /* p{
+        background-color: brown;
+        width: 250px;
+        font-style: oblique;
+        height: 100px;
+        font-size: 28px;
+     } */
+            .D1 {
+
+
+                /* here,width-200px indicates the size of this d1 which is relative to itself */
+                /* width:200px */
+
+                /* here, this div is having 50% viewport (viewport is a visible area of any type of device like laptop, mobile,tablet) 
+     so in this case this d1 changes its width according to the viewport  */
+                background-color: darkviolet;
+                width: 50vw;
+                margin: auto;
+                text-align: center;
+                height: 10vh;
+            }
+
+            /* height is 80% of viewport */
+            .D2 {
+                background-color: lavender;
+                width: 50vw;
+                min-height: 60vh;
+                margin: 8px auto;
+                text-align: justify;
+                /* font-size: 2rem; */
+            }
+
+            .D3 {
+                background-color: darkviolet;
+                margin: auto;
+                width: 50vw;
+                text-align: center;
+                height: 10vh;
+                /* The default font size of text content in web page is 16px */
+                /* 16px=1em */
+                /* font-size:1em */
+                /* font-size: 0.5em; */
+
+                /* here 2rem means two times the size of root element. 
+        Means here the size of the root element<html> is 1.5=24px so the size of this d2 is 48px(24*2) */
+                /* font-size:2rem; */
+            }
+
+            /* this is for  */
+            .p {
+                font-size: 0.75rem;
+                border: 2px solid red;
+                background-color: lightcyan;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Units indicates the length of any html element -->
+        <!-- CSS consists most widely units like px,%,vm,vh,rem,vmin,vmax,min-width,max-width ,min-height,max-height-->
+
+        <!-- <p>This is a Paragraph</p> -->
+
+        <div class="D1" style="font-size:2em;">Navigation Bar</div>
+
+        <div class="D2">
+            <h2 style="padding: 10px;text-align: center;">Main Section</h2>Cricket is a game of class, character and
+            commitment. It not only requires years of practice but also passion and dedication. Originally played in
+            Britain, this sport has spread worldwide and made a remarkable impact on the lives of people.
+
+            Professionally, a cricket match consists of two competing teams with their playing eleven. The matches are
+            set in a stadium filled with crowd, commentators, umpires and cameras for their live telecast. There are
+            different formats and championships for the game including:
+
+            Test matches, One Day Internationals (ODIs) and T20 Internationals which are unlimited, 50 and 20 over
+            matches respectively
+            There are many teams from across the continents representing their own country
+            Distinguished cricket tournaments include the World Cup played after every 4 years in both 20 and 50 over
+            formats, the Ashes played between the cricket teams of England and Australia, Tri-series played by three
+            nations and the Asia Cup played between India, Bangladesh, Pakistan and Sri Lanka.
+            Besides this, every country separately organizes its own premier leagues of 20 overs with players from
+            different nations.
+        </div>
+
+        <div Class="D3" style="font-size: 2em;">Footer</div>
+        <p class="p">Hello Shubham</p>
+        <p>Hello Shubham Pawar</p>
+    </body>
+
+</html>

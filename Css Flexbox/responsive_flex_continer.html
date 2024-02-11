@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            background-color: red;
+            display: flex;
+            /* if we are adding multiple flex-items in one flex container
+          so the flex property will try to adjust all of that flex items in one singel row
+          which affect the original given height and width of each flex item
+
+          so to avoid this, and to display all of the flex items properly alogn with their 
+          original height and width,we need use "flex-wrap:wrap" property
+
+         "flex-wrap:no wrap" is the default property
+       */
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            height: 300px;
+        }
+        .demo > .c1 {
+             background-color: burlywood;
+             width: 100px;
+             height: 80px;
+             border: 1px solid black;
+             margin: 20px;
+             padding: 10px;
+
+        }
+        @media (max-width:600px){
+            .demo{
+                flex-direction: column;
+                height: auto;
+                background-color: yellowgreen;
+                /* flex-wrap: wrap; */
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="c1" id="d1">Div1</div>
+        <div class="c1" id="d2">Div2</div>
+        <div class="c1" id="d3">Div3</div>
+        <div class="c1" id="d4">Div4</div>
+        <div class="c1" id="d5">Div5</div>
+        <div class="c1" id="d6">Div6</div>
+        <div class="c1" id="d7">Div7</div>
+        <div class="c1" id="d8">Div8</div>
+        <div class="c1" id="d9">Div9</div>
+        <div class="c1" id="d10">Div10</div>
+       
+
+
+    </div>
+</body>
+</html>
